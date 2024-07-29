@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
+import FollowBar from "@/components/layout/FollowBar";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
               ">
                 {children}
               </div>
+              <FollowBar/>
             </div>
           </div>
         </div>
